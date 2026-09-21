@@ -1,0 +1,27 @@
+STREAMLIT FLAT FIX
+
+This build intentionally has NO providers/ folder.
+
+Upload ALL files in this ZIP to the ROOT of your GitHub VinylHunter repository.
+
+Required root files:
+- streamlit_app.py
+- core.py
+- discogs_identifier.py
+- discogs_market.py
+- international.py
+- value_engine.py
+- requirements.txt
+- packages.txt
+
+Also upload the .streamlit folder if possible.
+
+In Streamlit Cloud:
+Main file path = streamlit_app.py
+
+Secrets:
+DISCOGS_TOKEN = "YOUR_TOKEN"
+DISCOGS_USERNAME = "YOUR_USERNAME"
+
+This fixes:
+ModuleNotFoundError: No module named 'providers'
